@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "prasad-remote-state"
+    bucket = "prasad-terraform-remote-state"
     key    = "expense-dev-vpc"
     region = "us-east-1"
     dynamodb_table = "eks-infra-locking"
